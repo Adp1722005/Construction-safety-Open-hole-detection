@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 4
+names: ['Safety-barrier', 'Safety-bollard', 'Safety-cone', 'open-hole']
+
+roboflow:
+  workspace: northeastern-4sfxe
+  project: construction-safety-open-hole-excavation-detection
+  version: 5
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/northeastern-4sfxe/construction-safety-open-hole-excavation-detection/dataset/5
