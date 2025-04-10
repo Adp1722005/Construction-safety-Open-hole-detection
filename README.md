@@ -1,6 +1,9 @@
 # Construction-safety-Open-hole-detection
+
 https://universe.roboflow.com/northeastern-4sfxe/open-hole-detection-construction-safety
+
 Provided by a Roboflow user
+
 License: CC BY 4.0
 
 This model is designed for deployment on Jetson-based edge inference systems on job sites, enabling real-time monitoring of unsafe conditions related to excavation and earth-moving activities. The model will be integrated with a PPE detection system to ensure worker safety by checking for harness use near hazardous excavations.
