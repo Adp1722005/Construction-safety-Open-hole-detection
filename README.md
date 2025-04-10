@@ -32,7 +32,7 @@ Augmentation Applied (for YOLOv5 model with highest accuracy):
 
 The YOLOv5 model achieved the highest accuracy of 81% with these pre-processing and augmentation techniques.
 
-<a href=" https://universe.roboflow.com/northeastern-4sfxe/open-hole-detection-construction-safety">
+<a href="https://universe.roboflow.com/northeastern-4sfxe/open-hole-detection-construction-safety">
     <img src="https://app.roboflow.com/images/download-dataset-badge.svg"></img>
 </a>
 <a href="https://universe.roboflow.com/northeastern-4sfxe/open-hole-detection-construction-safety/model/">
