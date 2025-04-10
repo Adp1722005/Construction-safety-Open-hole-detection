@@ -1,26 +1,40 @@
 # Construction-safety-Open-hole-detection
-https://universe.roboflow.com/northeastern-4sfxe/construction-safety-open-hole-excavation-detection
+https://universe.roboflow.com/northeastern-4sfxe/open-hole-detection-construction-safety
 Provided by a Roboflow user
 License: CC BY 4.0
 
-This model will be deployed to our Jetson-based edge inference systems for job sites allowing us to monitor and report on unsafe conditions surrounding excavation and earth moving. This model should run on a single-board computer; we will likely combine functionality with the PPE model to determine if somebody is wearing a harness near an unsafe excavation.
+This model is designed for deployment on Jetson-based edge inference systems on job sites, enabling real-time monitoring of unsafe conditions related to excavation and earth-moving activities. The model will be integrated with a PPE detection system to ensure worker safety by checking for harness use near hazardous excavations.
 
-The dataset includes 1842 images.
-Open-hole are annotated in YOLOv8 format.
+Dataset:
+675 Images annotated in the following formats: YOLOv5, YOLOv7, YOLOv8, COCOMO, and Mask R-CNN.
 
-The following pre-processing was applied to each image:
-* Auto-orientation of pixel data (with EXIF-orientation stripping)
-* Resize to 640x640 (Stretch)
+Pre-processing Applied:
 
-The following augmentation was applied to create 3 versions of each source image:
-* 50% probability of horizontal flip
-* Random rotation of between -7 and +7 degrees
-* Random brigthness adjustment of between -15 and +15 percent
-* Salt and pepper noise was applied to 3 percent of pixels
+* Resize: Images stretched to 640x640
 
-<a href="https://universe.roboflow.com/northeastern-4sfxe/construction-safety-open-hole-excavation-detection">
+* Classes Modified: Class 0 remapped, Class 1 dropped
+
+* Null Filter: All images must contain annotations.
+
+Augmentation Applied (for YOLOv5 model with highest accuracy):
+
+* Outputs per Training Example: 5
+
+* Flipping: Horizontal
+
+* Rotation: Between -8° and +8°
+
+* Brightness: Between -38% and +38%
+
+* Blur: Up to 1.75px
+
+* Cutout: 7 boxes, 12% size each
+
+The YOLOv5 model achieved the highest accuracy of 81% with these pre-processing and augmentation techniques.
+
+<a href=" https://universe.roboflow.com/northeastern-4sfxe/open-hole-detection-construction-safety">
     <img src="https://app.roboflow.com/images/download-dataset-badge.svg"></img>
 </a>
-<a href="https://universe.roboflow.com/northeastern-4sfxe/construction-safety-open-hole-excavation-detection/model/">
+<a href="https://universe.roboflow.com/northeastern-4sfxe/open-hole-detection-construction-safety/model/">
     <img src="https://app.roboflow.com/images/try-model-badge.svg"></img>
 </a>
